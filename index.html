@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Class 5 Demo</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- floating sidebar -->
+    <div class="sidebar">
+        <div class="title">
+            Class 5 Demo
+        </div>
+        <div id="borough">
+            Click a borough on the map, the boro_name from the geojson data will be displayed here.
+        </div>
+        <hr />
+        <!-- buttons to control the map view -->
+        <div class="description-text">These buttons use flyTo() and fitBounds() to control the map view.</div>
+        <button class="button-18" id="staten-island-button">Staten Island</button>
+        <button class="button-18" id="manhattan-button">Manhattan</button>
+
+        <!-- button to toggle layer visibility -->
+        <div class="description-text">This button toggles the visibility of the borough boundary line and fill layers
+            using setLayoutProperty()</div>
+        <button class="button-18" id="borough-toggle">Toggle Boroughs</button>
+    </div>
+
+    <!-- map container div -->
+    <div id="map"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

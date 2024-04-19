@@ -1,0 +1,88 @@
+/* no padding or margin on body so we can make the map full screen */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* style the map container (full screen) */
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* add a floating sidebar in the top left */
+.sidebar {
+    position: absolute;
+    width: 250px;
+    z-index: 10;
+    background: #969696;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: sans-serif
+}
+
+
+/* styles for text areas in the sidebar */
+#borough, .description-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* style the title */
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom:8px;
+}
+
+/* button style */
+/* Beautiful button from https://getcssscan.com/css-buttons-examples */
+.button-18 {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-bottom:8px;
+  }
+  
+  .button-18:hover { 
+    background-color: #16437E;
+    color: #ffffff;
+  }
+  
+  .button-18:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+  }
+  
+  .button-18:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+  }
